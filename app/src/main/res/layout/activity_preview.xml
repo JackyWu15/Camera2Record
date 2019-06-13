@@ -4,10 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+    <TextView
+        android:id="@+id/tv_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前文件路径："
+        />
     <ImageView
         android:id="@+id/iv_photo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_path"
         />
 
+    <VideoView
+        android:id="@+id/vv_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_path"
+        android:visibility="gone"
+        />
 </RelativeLayout>
